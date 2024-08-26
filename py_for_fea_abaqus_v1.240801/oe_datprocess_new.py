@@ -15,7 +15,6 @@ import os
 # List all .dat files in the current directory
 dat_files = [file for file in os.listdir() if file.endswith('.dat')]
 
-# Initialize a list to store all combined sum
 combined_result_data = []
 
 # Iterate through each .dat file
@@ -24,7 +23,6 @@ for file_name in dat_files:
         data = file.read()
 
 # Processing for each file------------------------------------------------------------------
-        # Your processing block for one .dat file here
 
         # Find the indices of 'SUMMARY'
         last_summary_index = data.rfind('SUMMARY')
@@ -100,7 +98,7 @@ for file_name in dat_files:
         if not rf2_col1_values or not rf2_col2_values or not rf2_col3_values or not rf1_col1_values or not rf1_col2_values or not rf1_col3_values:
             error_message = "Error: DivisionZero. No data in file {}".format(file_name)
             error_message2 = "Error:DivisionZero.Nodatainfile"
-            print(error_message)  # Print the error message to the terminal
+            print(error_message) 
             combined_sum_data.append((file_name, error_message2))
             continue
         
@@ -115,7 +113,7 @@ for file_name in dat_files:
         rf1_len_thick = len(rf1_thick_col4) #To check # of thickness
         rf1_sum_thick = sum(rf1_thick_col4)
         
-        # Initialize lists to store the reaction force divided by thickness
+        # Lists to store the reaction force divided by thickness
         rf2_force_per_thickness = []
         rf1_force_per_thickness = []
 
