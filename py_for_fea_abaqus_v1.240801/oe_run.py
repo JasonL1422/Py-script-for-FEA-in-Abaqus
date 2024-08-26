@@ -106,7 +106,7 @@ for param_C10 in parameter_values_C10:
                         input_filename
                         )
 
-                    print(abaqus_cmd)  # Print the command for inspection
+                    print(abaqus_cmd)  # Printing the command for inspection
                     process = subprocess.Popen(abaqus_cmd, shell=True)
-                    process.wait()  # Wait for the job to finish
-                    time.sleep(60)  # Adjust this duration as needed
+                    process.wait()  
+                    time.sleep(60)  # Can vary
