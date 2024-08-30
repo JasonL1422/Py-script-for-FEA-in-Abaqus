@@ -5,6 +5,5 @@ This script is to run the finite element analysis (FEA) in Abaqus varying multip
 * Model and part files are not provided.
 * Detailed explanation and others will be updated when the manuscript is accepted.
 
-<img src="https://github.com/JasonL1422/Py-script-for-FEA-in-Abaqus/blob/main/img1.png" width="500"/> </a>
 
 
